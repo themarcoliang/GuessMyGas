@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme. -->
+    <!--<style name="AppTheme">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="MyTheme" parent="Theme.MaterialComponents.Light.NoActionBar" >
+        <item name="colorPrimary">@color/MaterialOrange</item>
+        <item name="colorAccent">@color/AccentOrange</item>
+        <item name="colorPrimaryDark">@color/MaterialOrangeDark</item>
+        <item name="android:colorForeground">@android:color/white</item>
+        <item name="android:colorBackground">@color/MaterialOrange</item>
+        <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
+        <item name="android:statusBarColor">@color/MaterialOrangeDark</item>
+        <item name="android:navigationBarColor">@color/MaterialOrangeDark</item>
+
+    </style>
+</resources>
