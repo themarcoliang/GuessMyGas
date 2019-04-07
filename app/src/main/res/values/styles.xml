@@ -17,6 +17,7 @@
         <item name="android:textColorPrimary">@android:color/primary_text_dark</item>
         <item name="android:statusBarColor">@color/MaterialOrangeDark</item>
         <item name="android:navigationBarColor">@color/MaterialOrangeDark</item>
-
+        <item name="colorControlHighlight">@color/MaterialOrange</item>
     </style>
+
 </resources>
