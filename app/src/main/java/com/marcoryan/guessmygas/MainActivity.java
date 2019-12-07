@@ -3,14 +3,16 @@ package com.marcoryan.guessmygas;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 
-import com.google.android.gms.maps.MapFragment;
+//import com.google.android.gms.maps.MapFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentActivity;
+//import androidx.fragment.app.FragmentActivity;
 import androidx.fragment.app.FragmentManager;
 
 import android.view.MenuItem;
+//import android.view.View;
+//import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -40,28 +42,32 @@ public class MainActivity extends AppCompatActivity {
 
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                    switch (menuItem.getItemId()) {
-                        case R.id.bottom_bar_item_map:
-                            fm.beginTransaction().hide(active).show(mapFragment).commit();
-                            active = mapFragment;
-                            return true;
+        = new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.bottom_bar_item_map:
+                        fm.beginTransaction().hide(active).show(mapFragment).commit();
+                        active = mapFragment;
+                        return true;
 
-                        case R.id.bottom_bar_item_trips:
-                            fm.beginTransaction().hide(active).show(tripsFragment).commit();
-                            active = tripsFragment;
-                            return true;
+                    case R.id.bottom_bar_item_trips:
+                        fm.beginTransaction().hide(active).show(tripsFragment).commit();
+                        active = tripsFragment;
+                        return true;
 
-                        case R.id.bottom_bar_item_settings:
-                            fm.beginTransaction().hide(active).show(settingsFragment).commit();
-                            active = settingsFragment;
-                            return true;
-                    }
-                    return false;
+                    case R.id.bottom_bar_item_settings:
+                        fm.beginTransaction().hide(active).show(settingsFragment).commit();
+                        active = settingsFragment;
+                        return true;
+                }
+                return false;
             }
         };
+
+    //class for when card1 is pressed
+    //Todo: fill this with actual things later
+
 }
 
 
